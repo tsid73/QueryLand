@@ -1,0 +1,426 @@
+.navbar-default {
+    background-color: cadetblue;
+}
+.navbar-default .navbar-nav>li>a {
+    color: ghostwhite;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    color: ghostwhite;
+}
+
+@media (min-width: 768px) {
+    .navbar-default {
+        height: 45px;
+    }
+    .container-fluid {
+        min-height: 600px;
+        
+    }
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    color: black;
+    background-color: ghostwhite;
+}
+
+#editor {
+    overflow: auto;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.ql-snow .ql-tooltip {
+    left: -10px!important;
+}
+
+.main {
+    margin-top: 20px;
+}
+
+.container-fluid {
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.footer {
+    margin-top: 15px;
+    padding-top: 10px;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: cadetblue;
+    color: ghostwhite;
+}
+
+.br-r {
+    border-right: 1px solid lightgrey;
+    height: auto;
+}
+
+.br-l {
+    border-left: 1px solid lightgrey;
+    height: auto;
+}
+
+.top-contri {
+    padding: 10px;
+    border: 1px outset;
+    box-shadow: 5px 5px 20px grey;
+    font-size: 13px;
+}
+
+.disp {
+    font-size: 13px;
+}
+.big{
+    flex: 2;
+}
+
+.disp>a:hover {
+    text-decoration: none;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-fluid .jumbotron {
+    padding: 10px;
+    min-width: 200px;
+}
+
+
+.jumbotron {
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.blue {
+    background-color: #337ab7;
+}
+
+.red {
+    background-color: #d9534f;
+}
+
+.fixed-button {
+    background-color: #FF2434;
+    font-size: 12px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    position: fixed;
+    bottom: 0px;
+    right: 15px;
+    height: 50px;
+    /*    width: 80px;*/
+    margin-bottom: 20px;
+    border-radius: 50px;
+    box-shadow: 1px 3px 5px #888888;
+    z-index: 1;
+}
+.fixed-buttons {
+    background-color:dimgray;
+    font-size: 12px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    position: fixed;
+    bottom: 70px;
+    right: 15px;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    box-shadow: 1px 3px 5px #888888;
+    z-index: 1;
+}
+
+@keyframes wobble {
+    16.65% {
+        -webkit-transform: translateY(8px);
+        -ms-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+    33.3% {
+        -webkit-transform: translateY(-6px);
+        -ms-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+    49.95% {
+        -webkit-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    66.6% {
+        -webkit-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+    83.25% {
+        -webkit-transform: translateY(1px);
+        -ms-transform: translateY(1px);
+        transform: translateY(1px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 70px;
+    height: 70px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*Who are we*/
+
+.bg-c {
+    background-color: black;
+    color: ghostwhite;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    float: left;
+    margin-right: 20px;
+}
+
+.top-m {
+    margin-top: 15px;
+}
+
+.h1 {
+    font-size: 50px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-weight: 400;
+}
+
+.cards {
+    width: 200px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    text-align: center;
+    /*        background-color: aqua;*/
+}
+
+.cards:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cards img {
+    height: 70%;
+    border-radius: 5px;
+}
+
+.cont {
+    padding: 2px 16px;
+}
+
+
+/*End who*/
+
+/*start question*/
+#snackbar {
+        visibility: hidden;
+        min-width: 250px;
+        margin-left: -125px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 30%;
+        bottom: 30px;
+        font-size: 14px;
+    }
+    
+    #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+    
+    @-webkit-keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+        to {
+            bottom: 30px;
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+        to {
+            bottom: 30px;
+            opacity: 1;
+        }
+    }
+    
+    @-webkit-keyframes fadeout {
+        from {
+            bottom: 30px;
+            opacity: 1;
+        }
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+    
+    @keyframes fadeout {
+        from {
+            bottom: 30px;
+            opacity: 1;
+        }
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+    
+    .best-ans {
+        background-color: transparent;
+        border: none;
+    }
+    #report{
+        background-color: transparent;
+        border: none;
+    }
+/*    end question*/
+
+
+/* Autocomplete
+----------------------------------*/
+
+.ui-autocomplete {
+    position: absolute;
+    cursor: default;
+}
+
+
+/* workarounds */
+
+* html .ui-autocomplete {
+    width: 1px;
+}
+
+
+/* without this, the menu expands to 100% in IE6 */
+
+
+/* Menu
+----------------------------------*/
+
+.ui-menu {
+    list-style: none;
+    padding: 6px;
+    margin: 0;
+    display: block;
+    width: 427px;
+}
+
+.ui-menu .ui-menu {
+    margin-top: -3px;
+}
+
+.ui-menu .ui-menu-item {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+}
+
+.ui-menu .ui-menu-item a {
+    text-decoration: none;
+    display: block;
+    padding: .1em .2em;
+    line-height: 1.5;
+    zoom: 1;
+}
+
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+    margin: -1px;
+}
+
+@media (max-width:768px) {
+    .flexbox {
+        font-size: 12px;
+        padding: 5px;
+    }
+    .disp {
+        padding: 10px;
+        font-size: 11px;
+    }
+    .disp>a {
+        font-size: 14px;
+    }
+    .disp .badge {
+        font-size: 11px;
+    }
+    .h5 {
+        font-size: 12px;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: ghostwhite;
+    }
+    .btn{
+        white-space: normal;
+        padding: 3px 8px;
+        font-size: 12px;
+    }
+    .badge{
+        padding: 2px 5px;
+        font-size: 11px;
+    }
+    
+}

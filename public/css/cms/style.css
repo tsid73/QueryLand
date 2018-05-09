@@ -1,0 +1,102 @@
+.top-nav>li {
+    display: inline-block;
+    float: left;
+}
+
+.row {
+    margin-top: 80px;
+}
+
+@media only screen and (max-width: 1125px) {
+    .row {
+        margin-top: 135px;
+    }
+}
+
+.navbar-right{
+    margin-right: 5px;    
+}
+
+.box .panel-heading {
+    margin: 5px 0;
+    font-size: 35px;
+    letter-spacing: 0.1em;
+}
+
+.box .panel-body {
+    margin: 5px;
+}
+.alert{
+    padding: 15px 30em;
+}
+
+.disabled{
+     color: gray;
+  pointer-events: none;
+}
+.fixed-buttons {
+    background-color:dimgray;
+    font-size: 12px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    position: fixed;
+    bottom: 70px;
+    right: 15px;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    box-shadow: 1px 3px 5px #888888;
+    z-index: 1;
+}
+
+@keyframes wobble {
+    16.65% {
+        -webkit-transform: translateY(8px);
+        -ms-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+    33.3% {
+        -webkit-transform: translateY(-6px);
+        -ms-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+    49.95% {
+        -webkit-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    66.6% {
+        -webkit-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+    83.25% {
+        -webkit-transform: translateY(1px);
+        -ms-transform: translateY(1px);
+        transform: translateY(1px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.huge {
+    font-size: 50px;
+    line-height: normal;
+}
+

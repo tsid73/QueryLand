@@ -1,0 +1,40 @@
+
+function readFile() {
+  
+  if (this.files && this.files[0]) {
+    
+    var FR= new FileReader();
+      
+    FR.addEventListener("load", function(e) {
+      document.getElementById("pro").src       = e.target.result;
+      document.getElementById("b64").value = e.target.result;
+    }); 
+    
+    FR.readAsDataURL( this.files[0] );
+  }
+  
+}
+document.getElementById("img").addEventListener("change", readFile);</script>
+
+{{ old( 'remember') ? 'checked' : '' }}
+
+let base64Length = s.length - (s.indexOf(',') + 1);
+        let padding = (s.charAt(s.length - 2) === '=') ? 2 : ((s.charAt(s.length - 1) === '=') ? 1 : 0);
+        let fileSize = base64Length * 0.75 - padding;
+        
+          <div class="row">
+                <div class="col-lg-4 col-md-4 col-lg-offset-3">
+                    <div class="cards"> <img src="{{asset('images/placeholder.jpg')}}" alt="" style="width:100%">
+                        <div class="cont">
+                            <div class="h3">Siddhant Tripathi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="cards"> <img src="{{asset('images/placeholder.jpg')}}" alt="" style="width:90%">
+                        <div class="cont">
+                            <div class="h3">Siddhant Tripathi</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
